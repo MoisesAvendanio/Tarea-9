@@ -1,0 +1,18 @@
+import math
+a=int(input("Ingrese el valor de a: "))
+b=int(input("Ingrese el valor de b: "))
+c=int(input("Ingrese el valor de c: "))
+d=(b*b)-(4*a*c)
+if(d<0):
+    print("No tiene valores reales")
+    xa=(-d**(1/2))/2*a
+    xb=-(-d**(1/2))/2*a
+    xc=(-b)/(2*a)
+    print("x1 real: ",xc,"imaginaria: ",xa)
+    print("x2 real: ",xc,"imaginaria: ",xb)
+    
+else:
+    x1=((-b)+(math.sqrt(d)))/2*a
+    x2=((-b)-(math.sqrt(d)))/2*a
+    print("x1: ",x1)
+    print("x2: ",x2)
